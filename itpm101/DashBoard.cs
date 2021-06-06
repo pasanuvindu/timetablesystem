@@ -89,8 +89,7 @@ namespace itpm101
 
         private void label1_Click(object sender, EventArgs e)
         {
-            //test tttttttttttt
-            //ttttttttttttttttt
+
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
