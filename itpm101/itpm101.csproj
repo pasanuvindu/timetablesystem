@@ -1,0 +1,588 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F05EB128-D426-41B5-8787-9B0B5AAB7188}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>itpm101</RootNamespace>
+    <AssemblyName>itpm101</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\pasan\OneDrive\Desktop\myapp\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>ABCinstitute</ProductName>
+    <PublisherName>ABCinstituteManagement</PublisherName>
+    <SuiteName>timetablemanagement</SuiteName>
+    <ApplicationRevision>7</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F7B58429F53CD819BEE162776B532686139C5598</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>itpm101_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddLocation.designer.cs">
+      <DependentUpon>AddLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddStudentGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStudentGroup.designer.cs">
+      <DependentUpon>AddStudentGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTags.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTags.designer.cs">
+      <DependentUpon>AddTags.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionManager.cs" />
+    <Compile Include="AddLecture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddLecture.Designer.cs">
+      <DependentUpon>AddLecture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSubjects.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSubjects.Designer.cs">
+      <DependentUpon>AddSubjects.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsecutiveSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsecutiveSession.designer.cs">
+      <DependentUpon>ConsecutiveSession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DashBoard.designer.cs">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddWorkingDays.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddWorkingDays.designer.cs">
+      <DependentUpon>AddWorkingDays.cs</DependentUpon>
+    </Compile>
+    <Compile Include="itpmDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>itpmDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="itpmDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>itpmDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="itpmDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>itpmDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="itpmDataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>itpmDataSet13.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="itpmDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>itpmDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="itpmDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>itpmDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="itpmDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>itpmDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="itpmDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>itpmDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="itpmDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>itpmDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="itpmDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>itpmDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="itpmDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>itpmDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="itpmDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>itpmDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SessionNot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SessionNot.Designer.cs">
+      <DependentUpon>SessionNot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageNot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageNot.Designer.cs">
+      <DependentUpon>ManageNot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocationNot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocationNot.Designer.cs">
+      <DependentUpon>LocationNot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="itpmDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>itpmDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="itpmDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>itpmDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ManageLecturer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageLecturer.Designer.cs">
+      <DependentUpon>ManageLecturer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageLocation.Designer.cs">
+      <DependentUpon>ManageLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageSessionRooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageSessionRooms.designer.cs">
+      <DependentUpon>ManageSessionRooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageStudentGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageStudentGroup.designer.cs">
+      <DependentUpon>ManageStudentGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageSubject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageSubject.Designer.cs">
+      <DependentUpon>ManageSubject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSession.Designer.cs">
+      <DependentUpon>AddSession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManageSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageSession.Designer.cs">
+      <DependentUpon>ManageSession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="itpmDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>itpmDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Lecture.cs" />
+    <Compile Include="ManageTags.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageTags.designer.cs">
+      <DependentUpon>ManageTags.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NonOvelappingSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NonOvelappingSession.designer.cs">
+      <DependentUpon>NonOvelappingSession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ParallelSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParallelSession.designer.cs">
+      <DependentUpon>ParallelSession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StudentGroup\Student.cs" />
+    <Compile Include="TimesAllocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimesAllocation.designer.cs">
+      <DependentUpon>TimesAllocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAnalysis.Designer.cs">
+      <DependentUpon>ViewAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLocation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewLocation.designer.cs">
+      <DependentUpon>ViewLocation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewNotAvailable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewNotAvailable.Designer.cs">
+      <DependentUpon>ViewNotAvailable.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddLecture.resx">
+      <DependentUpon>AddLecture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddLocation.resx">
+      <DependentUpon>AddLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStudentGroup.resx">
+      <DependentUpon>AddStudentGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSubjects.resx">
+      <DependentUpon>AddSubjects.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTags.resx">
+      <DependentUpon>AddTags.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsecutiveSession.resx">
+      <DependentUpon>ConsecutiveSession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DashBoard.resx">
+      <DependentUpon>DashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddWorkingDays.resx">
+      <DependentUpon>AddWorkingDays.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SessionNot.resx">
+      <DependentUpon>SessionNot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageNot.resx">
+      <DependentUpon>ManageNot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationNot.resx">
+      <DependentUpon>LocationNot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageLecturer.resx">
+      <DependentUpon>ManageLecturer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageLocation.resx">
+      <DependentUpon>ManageLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageSessionRooms.resx">
+      <DependentUpon>ManageSessionRooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageStudentGroup.resx">
+      <DependentUpon>ManageStudentGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageSubject.resx">
+      <DependentUpon>ManageSubject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSession.resx">
+      <DependentUpon>AddSession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageSession.resx">
+      <DependentUpon>ManageSession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageTags.resx">
+      <DependentUpon>ManageTags.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NonOvelappingSession.resx">
+      <DependentUpon>NonOvelappingSession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParallelSession.resx">
+      <DependentUpon>ParallelSession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="TimesAllocation.resx">
+      <DependentUpon>TimesAllocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAnalysis.resx">
+      <DependentUpon>ViewAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewLocation.resx">
+      <DependentUpon>ViewLocation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewNotAvailable.resx">
+      <DependentUpon>ViewNotAvailable.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="itpm101_TemporaryKey.pfx" />
+    <None Include="itpmDataSet.xsc">
+      <DependentUpon>itpmDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="itpmDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>itpmDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="itpmDataSet.xss">
+      <DependentUpon>itpmDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="itpmDataSet1.xsc">
+      <DependentUpon>itpmDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="itpmDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>itpmDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="itpmDataSet1.xss">
+      <DependentUpon>itpmDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="itpmDataSet10.xsc">
+      <DependentUpon>itpmDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="itpmDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>itpmDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="itpmDataSet10.xss">
+      <DependentUpon>itpmDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="itpmDataSet11.xsc">
+      <DependentUpon>itpmDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="itpmDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>itpmDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="itpmDataSet11.xss">
+      <DependentUpon>itpmDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="itpmDataSet12.xsc">
+      <DependentUpon>itpmDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="itpmDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>itpmDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="itpmDataSet12.xss">
+      <DependentUpon>itpmDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="itpmDataSet13.xsc">
+      <DependentUpon>itpmDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="itpmDataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>itpmDataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="itpmDataSet13.xss">
+      <DependentUpon>itpmDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="itpmDataSet14.xsc">
+      <DependentUpon>itpmDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="itpmDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>itpmDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="itpmDataSet14.xss">
+      <DependentUpon>itpmDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="itpmDataSet2.xsc">
+      <DependentUpon>itpmDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="itpmDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>itpmDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="itpmDataSet2.xss">
+      <DependentUpon>itpmDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="itpmDataSet3.xsc">
+      <DependentUpon>itpmDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="itpmDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>itpmDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="itpmDataSet3.xss">
+      <DependentUpon>itpmDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="itpmDataSet4.xsc">
+      <DependentUpon>itpmDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="itpmDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>itpmDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="itpmDataSet4.xss">
+      <DependentUpon>itpmDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="itpmDataSet5.xsc">
+      <DependentUpon>itpmDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="itpmDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>itpmDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="itpmDataSet5.xss">
+      <DependentUpon>itpmDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="itpmDataSet6.xsc">
+      <DependentUpon>itpmDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="itpmDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>itpmDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="itpmDataSet6.xss">
+      <DependentUpon>itpmDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="itpmDataSet7.xsc">
+      <DependentUpon>itpmDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="itpmDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>itpmDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="itpmDataSet7.xss">
+      <DependentUpon>itpmDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="itpmDataSet8.xsc">
+      <DependentUpon>itpmDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="itpmDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>itpmDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="itpmDataSet8.xss">
+      <DependentUpon>itpmDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="itpmDataSet9.xsc">
+      <DependentUpon>itpmDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="itpmDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>itpmDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="itpmDataSet9.xss">
+      <DependentUpon>itpmDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="itpmDataSet9" targetNamespace="http://tempuri.org/itpmDataSet9.xsd" xmlns:mstns="http://tempuri.org/itpmDataSet9.xsd" xmlns="http://tempuri.org/itpmDataSet9.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="itpmConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="itpmConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.itpm101.Properties.Settings.GlobalReference.Default.itpmConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="itmpTableAdapter" GeneratorDataComponentClassName="itmpTableAdapter" Name="itmp" UserDataComponentName="itmpTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="itpmConnectionString (Settings)" DbObjectName="itpm.dbo.itmp" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Lecturer_Name FROM dbo.itmp</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Lecturer_Name" DataSetColumn="Lecturer_Name" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="itpmDataSet9" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="itpmDataSet9" msprop:Generator_UserDSName="itpmDataSet9">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="itmp" msprop:Generator_TableClassName="itmpDataTable" msprop:Generator_TableVarName="tableitmp" msprop:Generator_TablePropName="itmp" msprop:Generator_RowDeletingName="itmpRowDeleting" msprop:Generator_RowChangingName="itmpRowChanging" msprop:Generator_RowEvHandlerName="itmpRowChangeEventHandler" msprop:Generator_RowDeletedName="itmpRowDeleted" msprop:Generator_UserTableName="itmp" msprop:Generator_RowChangedName="itmpRowChanged" msprop:Generator_RowEvArgName="itmpRowChangeEvent" msprop:Generator_RowClassName="itmpRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Lecturer_Name" msprop:Generator_ColumnVarNameInTable="columnLecturer_Name" msprop:Generator_ColumnPropNameInRow="Lecturer_Name" msprop:Generator_ColumnPropNameInTable="Lecturer_NameColumn" msprop:Generator_UserColumnName="Lecturer_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
